@@ -60,7 +60,7 @@ body {
     bottom: 5%;
     left: 1%;
     background-color: black;
-    box-shadow: 3px -3px 10px yellow;
+    box-shadow: 3px -3px 10px #daa520;
     border-radius: 10px;
     padding: 40px;
     margin: 40px;
@@ -73,7 +73,7 @@ body {
     letter-spacing: 0.2px;
   }
   p::first-letter {
-    color: yellow;
+    color: #daa520;
     font-size: 1.5em;
   }
   #introduction h1 {
@@ -81,7 +81,7 @@ body {
     font-family: liquid;
     text-align: center;
     background-color: black;
-    box-shadow: -5px 5px 8px yellow;
+    box-shadow: -5px 5px 8px #daa520;
     border-radius: 10px;
     width: min-content;
     margin: auto;
@@ -90,6 +90,7 @@ body {
   #introduction {
     width: 80%;
     margin: auto;
+    margin-top: 3%;
   }
   #introduction img {
     float: right;
@@ -110,11 +111,12 @@ body {
     font-family: liquid;
     text-align: center;
     background-color: black;
-    box-shadow: -5px 5px 8px yellow;
+    box-shadow: -5px 5px 8px #daa520;
     border-radius: 10px;
     width: min-content;
     margin: auto;
     padding: 1% 10%;
+    margin-top: 4%;
     }
     #prototypes p {
       padding-top: 3%;
@@ -128,44 +130,59 @@ body {
       width: 75%;
       padding-top: 3%;
     }
-    .tercio {
-      justify-items: center;
-      margin: auto;
-      box-shadow: 3px 3px 20px 5px yellow;
-      padding: 0;
-      width: 33%;
-    }
+    /*GALERIA*/
     #galeria {
+      width: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
       justify-content: center;
-      margin: auto;
-      padding-bottom: 5%;
-      padding-top: 2%;
-      width: 80%;
+    }
+    #galeria img {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    #galeria picture {
+      text-align: center;
+      box-shadow: 0 -6px 10px #daa520, 0 6px 10px #daa520, 3px 0 10px #daa520, -3px -0 10px #daa520;
+      margin: 4%;
+      padding: 2%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
     }
     #galeria h2 {
       font-size: 1.0em;
       font-family: liquid;
       text-align: center;
     }
+    #galeria button {
+      background-color: aqua;
+      cursor: pointer;
+      margin-top: 2%;
+    }
+    
+    #galeria button:hover {
+      background-color: aqua;
+    }
     /*FOOTER*/
     footer {
-      box-shadow: 3px 3px 20px 10px yellow;
+      box-shadow: 0 -6px 10px #daa520, 0 6px 10px #daa520, 3px 0 10px #daa520, -3px -0 10px #daa520;
       margin: auto;
       height: min-content;
       width: 80%;
       padding: 1%;
+      margin-top: 4%;
       margin-bottom: 5%;
-  }
-  footer p{
-    margin: auto;
-    text-align: center;
-  }
-  footer p::first-letter {
-    color: aqua;
-  }
+    }
+    footer p{
+      margin: auto;
+      text-align: center;
+    }
+    footer p::first-letter {
+      color: aqua;
+    }
 
 
   
@@ -194,7 +211,5 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      margin: auto;
-      padding-bottom: 5%;
     }
   }
